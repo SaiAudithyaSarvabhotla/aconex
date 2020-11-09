@@ -46,10 +46,7 @@ public class UploadDocumentActions extends ActionsHelper {
 			selectByText(UploadDocumentScreen.dropdown_Type(), TestDataHelper.testData("Type"));
 			selectByText(UploadDocumentScreen.dropdown_Status(), TestDataHelper.testData("Status"));
 			selectByText(UploadDocumentScreen.dropdown_Discipline(), TestDataHelper.testData("Discipline"));
-			selectByText(UploadDocumentScreen.dropdown_VDRCode(), TestDataHelper.testData("VDRCode"));
-			selectByText(UploadDocumentScreen.dropdown_Category(), TestDataHelper.testData("Category"));
-			selectAttributesAndGreenStarCategory();
-			setText(UploadDocumentScreen.textbox_PrintSize(), TestDataHelper.testData("PrintSize"));
+			setText(UploadDocumentScreen.date_RevisionDate(),ActionsHelper.currentDate());
 		} catch (Exception exception) {
 			new FrameworkException(exception);
 		}

@@ -1,5 +1,8 @@
 package com.automation.framework.utils;
 
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.Random;
 
 import org.openqa.selenium.By;
@@ -146,6 +149,13 @@ public class ActionsHelper {
 		} else {
 			return randNum - 1;
 		}
+	}
+
+	public static String currentDate() {
+		DateFormat df = new SimpleDateFormat("dd/MM/yyyy");
+		Date date = new Date();
+		return df.format(date);
+
 	}
 
 }

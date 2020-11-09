@@ -3,7 +3,7 @@ Feature: Upload a new Document
   I want to upload a document so that I can save search and view
 
   Scenario: upload a document
-    //Given I Login into an aconex application
+    Given I Login into an aconex application with new Credentails
     When I fill Mandatory fields in Upload Document tab 
     And click on Upload
     Then Document should uploaded successfully

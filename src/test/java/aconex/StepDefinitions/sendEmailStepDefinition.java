@@ -1,14 +1,10 @@
 package aconex.StepDefinitions;
 
-import java.util.Collection;
-import java.util.List;
-
 import com.automation.framework.utils.TestDataHelper;
 
 import aconex.actions.LoginActions;
 import aconex.actions.MailActions;
 import aconex.actions.SummaryActions;
-import cucumber.api.Scenario;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
@@ -50,6 +46,7 @@ public class sendEmailStepDefinition {
 	@Then("^Mail should displayed in Search Results successfully$")
 	public void mailShouldDisplayedinSearchResults() throws Throwable {
 		MailActions.validateEmailDetails();
+		LoginActions.logout();
 	}
 
 }

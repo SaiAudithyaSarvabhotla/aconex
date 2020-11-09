@@ -81,4 +81,10 @@ public class UploadDocumentScreen extends ObjectHelper {
 	public static WebElement header_Success() {
 		return getWebElement();
 	}
+	
+	public static WebElement date_RevisionDate() {
+		return getWebElement();
+	}
+	
+	
 }
